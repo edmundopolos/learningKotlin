@@ -24,7 +24,7 @@ fun variables(){
 }
 fun loops(vararg numbers:Int): String{
     var result = 0
-    val res = 0
+    var res = 0
     for(number in numbers){
         result += number
 
@@ -39,11 +39,11 @@ fun loops(vararg numbers:Int): String{
     for (i in 10 downTo  2){
         println(i)
     }
-    var number = 0
-    while (number < 10){
-        println(number)
-        number++
+
+    while (res < 10){
+        println(res)
+        res++
     }
 
-    return  "loop result = ${result}"
+    return  "loop result = $result"
 }
