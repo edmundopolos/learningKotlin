@@ -12,7 +12,7 @@ fun variables(){
     var count: Short = 12345
     count  = count++
     val result = count * funds
-    val arr: Array<Int> = arrayOf(1,2,3,4,5,6)
+    val arr = arrayOf(1,2,3,4,5,6)
    println( arr.map { i->i*2 })
     println(arr.filter { k->k>3 })
 
@@ -38,6 +38,11 @@ fun loops(vararg numbers:Int): String{
     }
     for (i in 10 downTo  2){
         println(i)
+    }
+    var number = 0
+    while (number < 10){
+        println(number)
+        number++
     }
 
     return  "loop result = ${result}"
