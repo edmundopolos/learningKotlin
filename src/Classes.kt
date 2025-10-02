@@ -40,3 +40,17 @@ class Calc{
 class initlast(var name: String,var age:Int){
     lateinit var friend: String
 }
+
+//lambda functions
+class Button(var title:String,var color:String,var rounded: Boolean, var onClick: ()->Unit)
+
+
+class ButtonTrigger(var title:String,var color:String,var rounded: Boolean, var onClick: (value: Boolean)-> Boolean)
+
+
+
+//Generics
+class Shape<T>(val sides:T)
+
+//Data class
+data class Profile(var friends:Int,var active: Boolean)
